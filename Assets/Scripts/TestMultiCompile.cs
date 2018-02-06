@@ -70,4 +70,15 @@ public class TestMultiCompile : MonoBehaviour {
 		}
 	}
 
+	public void ToggleF(Toggle toggle)
+	{
+		Debug.Log("ToggleF : " + toggle.isOn);
+		if(toggle.isOn)
+		{
+			Shader.EnableKeyword("KEY_F");
+		}else{
+			Shader.DisableKeyword("KEY_F");
+		}
+	}
+
 }
